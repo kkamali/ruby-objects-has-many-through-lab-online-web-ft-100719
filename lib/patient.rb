@@ -20,9 +20,9 @@ class Patient
     Appointment.all.select{|appointment| appointment.patient == select}
   end 
   
-  # def doctors 
-  #   doctors = []
-  #   appointments.each{|appointment| doctors << appointment.doctor}
-  #   doctors 
-  # end 
+  def doctors 
+    doctors = []
+    appointments.each{|appointment| doctors << appointment.doctor}
+    doctors 
+  end 
 end 
